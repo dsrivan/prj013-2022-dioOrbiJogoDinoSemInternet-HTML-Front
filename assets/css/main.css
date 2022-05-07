@@ -1,0 +1,84 @@
+body {
+  background: #e7e7e7;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dino {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("/assets/img/dino.png");
+}
+
+.cactus {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url("/assets/img/cactus.png");
+}
+
+.gameOver {
+  color: #2c2c2c;
+  font-family: arial;
+  height: 90vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.restartGame {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.restartGame:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.background {
+  position: relative;
+  bottom: 0px;
+  background-repeat: repeat-x;
+  animation: slideRight 600s infinite linear;
+  -webkit-animation: slideRight 600s infinite linear;
+  width: 100%;
+  height: 200px;
+  background-image: url("/assets/img/background.png");
+}
+
+@keyframes slideRight {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
