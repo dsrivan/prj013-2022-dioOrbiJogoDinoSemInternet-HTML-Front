@@ -72,5 +72,5 @@ function fnResetGame() {
   document.location.reload(true);
 }
 
-// createCactus();
+createCactus();
 document.addEventListener('keyup', handleKeyUp);
